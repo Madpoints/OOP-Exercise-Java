@@ -17,33 +17,40 @@ public class Hamburger {
         this.price = 4.00;
     }
 
-    public void addTopping(int itemNumber) {
+    public double addTopping(int itemNumber) {
+        double toppingPrice = 0;
+
         switch (itemNumber) {
             case 1:
                 this.cheese = true;
-                this.price += .50;
+                toppingPrice = .50;
+                this.price += toppingPrice;
                 System.out.println("Cheese added");
                 break;
             case 2:
                 this.onion = true;
-                this.price += .25;
+                toppingPrice = .25;
+                this.price += toppingPrice;
                 System.out.println("Onion added");
                 break;
             case 3:
                 this.jalapeno = true;
-                this.price += .35;
+                toppingPrice = .35;
+                this.price += toppingPrice;
                 System.out.println("Jalapeno added");
                 break;
             case 4:
                 this.bacon = true;
-                this.price += 1.00;
+                toppingPrice = 1.00;
+                this.price += toppingPrice;
                 System.out.println("Bacon added");
                 break;
             default:
-                System.out.println("Not found");
                 break;
 
         }
+
+        return toppingPrice;
     }
 
     public double getPrice() {
