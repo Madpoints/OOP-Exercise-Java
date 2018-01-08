@@ -1,10 +1,10 @@
 package com.Madpoints;
 
 public class HealthyBurger extends Hamburger {
+    private double price;
     // Toppings
     private boolean avocado;
     private boolean turkeyBacon;
-    private double price;
 
 
     public HealthyBurger() {
@@ -42,11 +42,11 @@ public class HealthyBurger extends Hamburger {
         return price;
     }
 
-    public boolean isAvocado() {
+    public boolean hasAvocado() {
         return avocado;
     }
 
-    public boolean isTurkeyBacon() {
+    public boolean hasTurkeyBacon() {
         return turkeyBacon;
     }
 }

@@ -18,12 +18,23 @@ public class Main {
 //        System.out.println(hamburger.hasCheese());
 //        System.out.println(hamburger.hasOnion());
 
-        HealthyBurger healthyBurger = new HealthyBurger();
-        System.out.println(healthyBurger.getPrice());
-        System.out.println(healthyBurger.getBreadRollType());
+        /* Healthy burger class
+            Toppings:
+             5 Avocado, 6 Turkey bacon
+         */
+//        HealthyBurger healthyBurger = new HealthyBurger();
+//        System.out.println(healthyBurger.getPrice());
+//        System.out.println(healthyBurger.getBreadRollType());
+//
+//        healthyBurger.addTopping(5);
+//        healthyBurger.addTopping(1);
+//        System.out.println(healthyBurger.hasCheese());
+//        System.out.println(healthyBurger.hasAvocado());
+//        System.out.println(healthyBurger.getPrice());
 
-        healthyBurger.addTopping(5);
-        System.out.println(healthyBurger.hasCheese());
-        System.out.println(healthyBurger.getPrice());
+        DeluxeBurger deluxeBurger = new DeluxeBurger("White");
+        deluxeBurger.addTopping(1);
+        System.out.println(deluxeBurger.getPrice());
+        System.out.println(deluxeBurger.hasCheese());
     }
 }
