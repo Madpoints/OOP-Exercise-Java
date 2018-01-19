@@ -9,7 +9,4 @@ public class Basicburger {
         this.meat = true;
     }
 
-    public String getBreadRollType() {
-        return breadRollType;
-    }
 }

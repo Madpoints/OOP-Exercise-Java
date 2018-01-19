@@ -52,9 +52,7 @@ public class Hamburger extends Basicburger {
         return toppingPrice;
     }
 
-    public void burgerOrder() {
-        System.out.println("Your burger order: ");
-        System.out.println(" Base price: " + this.basePrice);
+    public double burgerOrder() {
         if (this.cheese) {
             System.out.println(" Cheese: .50");
         }
@@ -68,7 +66,10 @@ public class Hamburger extends Basicburger {
             System.out.println(" Bacon: 1.00");
         }
 
-        System.out.println("Total: " + this.totalPrice);
+        return this.totalPrice;
     }
 
+    public String getBreadRollType() {
+        return breadRollType;
+    }
 }

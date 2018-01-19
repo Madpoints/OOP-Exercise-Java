@@ -16,4 +16,10 @@ public class DeluxeBurger extends Basicburger {
     public double getPrice() {
         return price;
     }
+
+    public double mealOrder() {
+        System.out.println(" Includes chips and drink");
+
+        return this.price;
+    }
 }

@@ -39,7 +39,15 @@ public class HealthyBurger extends Hamburger {
     }
 
     @Override
-    public void burgerOrder() {
+    public double burgerOrder() {
         super.burgerOrder();
+        if (this.avocado) {
+            System.out.println(" Avocado: .50");
+        }
+        if (this.turkeyBacon) {
+            System.out.println(" Turkey bacon: 1.00");
+        }
+
+        return this.totalPrice;
     }
 }
