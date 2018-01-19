@@ -1,7 +1,8 @@
 package com.Madpoints;
 
 public class HealthyBurger extends Hamburger {
-    private double price;
+    private double basePrice;
+    private double totalPrice;
     // Toppings
     private boolean avocado = false;
     private boolean turkeyBacon = false;
@@ -9,25 +10,25 @@ public class HealthyBurger extends Hamburger {
 
     public HealthyBurger() {
         super("Brown Rye");
-        this.price = 4.25;
+        this.basePrice = 4.25;
+        this.totalPrice = basePrice;
     }
 
 
     @Override
     public double addTopping(int itemNumber) {
-        double toppingPrice = 0;
-        toppingPrice += super.addTopping(itemNumber);
-        price += toppingPrice;
+        double toppingPrice = super.addTopping(itemNumber);
+        totalPrice += toppingPrice;
 
         switch (itemNumber) {
             case 5:
                 this.avocado = true;
-                price += .50;
+                totalPrice += .50;
                 System.out.println("Avocado added");
                 break;
             case 6:
                 this.turkeyBacon = true;
-                price += 1.00;
+                totalPrice += 1.00;
                 System.out.println("Turkey bacon added");
                 break;
             default:
@@ -37,15 +38,8 @@ public class HealthyBurger extends Hamburger {
         return toppingPrice;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public boolean hasAvocado() {
-        return avocado;
-    }
-
-    public boolean hasTurkeyBacon() {
-        return turkeyBacon;
+    @Override
+    public void burgerOrder() {
+        super.burgerOrder();
     }
 }
