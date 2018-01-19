@@ -1,6 +1,6 @@
 package com.Madpoints;
 
-public class Hamburger {
+public class Hamburger extends Basicburger {
     // Basic Burger
     private String breadRollType;
     private boolean meat;
@@ -11,9 +11,8 @@ public class Hamburger {
     private boolean bacon = false;
     private boolean jalapeno = false;
 
-    public Hamburger(String bread) {
-        this.breadRollType = bread;
-        this.meat = true;
+    public Hamburger(String breadRollType) {
+        super(breadRollType);
         this.price = 4.00;
     }
 
@@ -55,10 +54,6 @@ public class Hamburger {
 
     public double getPrice() {
         return this.price;
-    }
-
-    public String getBreadRollType() {
-        return breadRollType;
     }
 
     public boolean hasCheese() {

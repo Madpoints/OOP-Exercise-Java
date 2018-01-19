@@ -3,16 +3,15 @@ package com.Madpoints;
 public class HealthyBurger extends Hamburger {
     private double price;
     // Toppings
-    private boolean avocado;
-    private boolean turkeyBacon;
+    private boolean avocado = false;
+    private boolean turkeyBacon = false;
 
 
     public HealthyBurger() {
         super("Brown Rye");
-        this.avocado = false;
-        this.turkeyBacon = false;
         this.price = 4.25;
     }
+
 
     @Override
     public double addTopping(int itemNumber) {

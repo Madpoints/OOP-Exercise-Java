@@ -7,34 +7,39 @@ public class Main {
             Toppings:
             Cheese 1, Onion 2, Jalapeno 3, Bacon 4
          */
-//        Hamburger hamburger = new Hamburger("White");
-//        System.out.println(hamburger.getPrice());
-//        System.out.println(hamburger.hasCheese());
-//        System.out.println(hamburger.hasOnion());
-//
-//        hamburger.addTopping(1);
-//        hamburger.addTopping(2);
-//        System.out.println(hamburger.getPrice());
-//        System.out.println(hamburger.hasCheese());
-//        System.out.println(hamburger.hasOnion());
+        Hamburger hamburger = new Hamburger("White");
+        System.out.println(hamburger.getPrice());
+        System.out.println(hamburger.hasCheese());
+        System.out.println(hamburger.hasOnion());
+
+        hamburger.addTopping(1);
+        hamburger.addTopping(2);
+        System.out.println(hamburger.getPrice());
+        System.out.println(hamburger.hasCheese());
+        System.out.println(hamburger.hasOnion());
+        System.out.println(hamburger.getBreadRollType());
 
         /* Healthy burger class
             Toppings:
              5 Avocado, 6 Turkey bacon
          */
-//        HealthyBurger healthyBurger = new HealthyBurger();
-//        System.out.println(healthyBurger.getPrice());
-//        System.out.println(healthyBurger.getBreadRollType());
-//
-//        healthyBurger.addTopping(5);
-//        healthyBurger.addTopping(1);
-//        System.out.println(healthyBurger.hasCheese());
-//        System.out.println(healthyBurger.hasAvocado());
-//        System.out.println(healthyBurger.getPrice());
+        HealthyBurger healthyBurger = new HealthyBurger();
+        System.out.println(healthyBurger.getPrice());
+        System.out.println(healthyBurger.getBreadRollType());
 
+        healthyBurger.addTopping(5);
+        healthyBurger.addTopping(1);
+        System.out.println(healthyBurger.hasCheese());
+        System.out.println(healthyBurger.hasAvocado());
+        System.out.println(healthyBurger.getPrice());
+
+        /*Deluxe burger class
+            Includes chips and drink
+                No additional toppings
+        */
         DeluxeBurger deluxeBurger = new DeluxeBurger("White");
-        deluxeBurger.addTopping(1);
         System.out.println(deluxeBurger.getPrice());
-        System.out.println(deluxeBurger.hasCheese());
+
+
     }
 }
